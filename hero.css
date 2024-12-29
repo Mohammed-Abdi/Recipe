@@ -1,0 +1,151 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 10px;
+    padding: 10px;
+}
+
+.hero .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.hero .container div{
+    width: 350px;
+    height: 450px;
+    background: #d1f9e0;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+}
+
+.hero .container div img{
+    height: 262px;
+}
+
+.hero .container p{
+    padding-inline: 10px;
+}
+
+.hero .container .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.hero .container a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #056428;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-block: 15px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero .container a:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 530px) and (max-width:540px){
+    .hero .container div{
+    width: 240px;
+    background: #d1f9e0;
+    border-radius: 0 0 15px 15px;
+}
+
+.hero .container div img{
+    height: 180px;
+}
+
+.hero .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.hero .container div{
+    height: 400px;
+}}
+
+@media (min-width: 541px) and (max-width:854px){
+    .hero .container div{
+        width: 240px;
+        background: #d1f9e0;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .hero .container div img{
+        height: 180px;
+    }
+
+    .hero .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .hero .container div{
+        height: 400px;
+    }
+}
+
+@media (min-width: 854px) and (max-width:1024px){
+    .hero .container div{
+        width: 240px;
+        background: #d1f9e0;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .hero .container div img{
+        height: 180px;
+    }
+
+    .hero .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .hero .container div{
+        height: 400px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1281px) {
+    .hero .container div{
+        width: 290px;
+        background: #d1f9e0;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .hero .container div img{
+        height: 215px;
+    }
+
+    .hero .container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .hero .container div{
+        height: 400px;
+    }
+}
+
+@media (min-width:1281px) {
+    .hero .container div{
+        width: 240px;
+        background: #d1f9e0;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .hero .container div img{
+        height: 180px;
+    }
+
+    .hero .container{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+    .hero .container div{
+        height: 400px;
+    }
+}
