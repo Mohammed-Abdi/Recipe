@@ -34,7 +34,6 @@ nav a:hover {
 
 
 .body {
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -45,7 +44,7 @@ nav a:hover {
 }
 
 .body .oranged {
-  color: #f45c2c;
+  color: #008000;
 }
 
 .body .description {
@@ -70,7 +69,7 @@ th {
 
 .finished-dish img {
   border-radius: 10px;
-  height: 265px;
+  height: 345px;
 }
 
 section {
@@ -87,5 +86,9 @@ p {
   }
   header .other-menu a {
     margin-right: 3px;
+  }
+  .finished-dish img {
+    border-radius: 10px;
+    height: 210px;
   }
 }
