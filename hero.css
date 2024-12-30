@@ -2,34 +2,47 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-inline: 10px;
-    padding: 10px;
+    padding-inline: 10px;
+    padding-block: 10px 30px;
+    background: #dbf8e6;
 }
 
 .hero .container{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
 .hero .container div{
-    width: 350px;
-    height: 450px;
-    background: #d1f9e0;
-    border-radius: 0 0 15px 15px;
+    width: 150px;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
     position: relative;
 }
 
+.hero .container div::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 56%;
+    border-radius: 20px 20px 0 0;
+    background: #000;
+    opacity: 0.25;
+}
+
 .hero .container div img{
-    height: 262px;
+    height: 112px;
+    border-radius: 20px 20px 0 0;
 }
 
 .hero .container p{
+    font-size: 14px;
     padding-inline: 10px;
 }
 
 .hero .container .title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -38,12 +51,9 @@
     text-decoration: none;
     color: #fff;
     background: #056428;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin-block: 15px;
-    margin-left: 10px;
-    position: absolute;
-    bottom: 0;
+    border-radius: 50px;
+    padding: 7px 14px;
+    margin-block: 6px;
     transition: opacity 0.3s ease;
 }
 
@@ -51,101 +61,55 @@
     opacity: 0.7;
 }
 
-@media (min-width: 530px) and (max-width:540px){
-    .hero .container div{
-    width: 240px;
-    background: #d1f9e0;
-    border-radius: 0 0 15px 15px;
-}
-
-.hero .container div img{
-    height: 180px;
-}
-
-.hero .container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-.hero .container div{
-    height: 400px;
-}}
-
-@media (min-width: 541px) and (max-width:854px){
-    .hero .container div{
-        width: 240px;
-        background: #d1f9e0;
-        border-radius: 0 0 15px 15px;
-    }
-    
-    .hero .container div img{
-        height: 180px;
-    }
-
-    .hero .container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-    .hero .container div{
-        height: 400px;
+@media (min-width: 768px) and (max-width:854px){
+    .hero .container{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 854px) and (max-width:1024px){
-    .hero .container div{
-        width: 240px;
-        background: #d1f9e0;
-        border-radius: 0 0 15px 15px;
+    .hero .container{
+        grid-template-columns: repeat(3, 1fr);
     }
-    
-    .hero .container div img{
-        height: 180px;
+    .hero .container div img {
+        height: 195px;
     }
-
-    .hero .container {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+    .hero .container div {
+        width: 260px;
     }
-    .hero .container div{
-        height: 400px;
+    .hero .container div::before{
+        height: 69.5%;
     }
 }
 
 @media (min-width: 1025px) and (max-width:1281px) {
-    .hero .container div{
-        width: 290px;
-        background: #d1f9e0;
-        border-radius: 0 0 15px 15px;
-    }
-    
-    .hero .container div img{
-        height: 215px;
-    }
-
     .hero .container{
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
     }
-    .hero .container div{
-        height: 400px;
+    .hero .container div img {
+        height: 195px;
+    }
+    
+    .hero .container div {
+        width: 260px;
+    }
+    .hero .container div::before{
+        height: 69.5%;
     }
 }
 
 @media (min-width:1281px) {
-    .hero .container div{
-        width: 240px;
-        background: #d1f9e0;
-        border-radius: 0 0 15px 15px;
-    }
-    
-    .hero .container div img{
-        height: 180px;
-    }
-
     .hero .container{
         grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
     }
-    .hero .container div{
-        height: 400px;
+    .hero .container div img {
+        height: 187px;
+    }
+    
+    .hero .container div {
+        width: 250px;
+    }
+    .hero .container div::before{
+        height: 68.5%;
     }
 }
